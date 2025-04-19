@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDA Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(208, 200, 200, 0.96);
+            color: black;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 14px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+        }
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+        .content {
+            padding: 40px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #ff4d4d;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/eda">EDA Dashboard</a>
+        <a href="/predict">Predict Sentiment</a>
+    </nav>
+
+    <!-- EDA Content -->
+    <div class="content">
+        <h1>Exploratory Data Analysis</h1>
+
+        <h2>Sentiment Distribution</h2>
+        <img src="/static/sentiment_dist.png" width="700">
+
+        <h2>Review Length by Sentiment</h2>
+        <img src="/static/review_length_box.png" width="700">
+
+        <h2>Top Words</h2>
+
+        <h3>Positive</h3>
+        <img src="/static/top_words_positive.png" width="700">
+
+        <h3>Negative</h3>
+        <img src="/static/top_words_negative.png" width="700">
+
+        <h3>Neutral</h3>
+        <img src="/static/top_words_neutral.png" width="700">
+
+        <br><br>
+        <a href="/">← Back to Home</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact Me: <a href="mailto:shobanbabujatoth15@gmail.com">shobanbabujatoth15@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
+
